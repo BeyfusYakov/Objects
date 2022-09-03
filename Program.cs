@@ -20,8 +20,8 @@ public class program {
 
             if (app.Environment.IsDevelopment())
             {
-                app.MapGet("/", () => "Мы в режиме разработки");
-                app.MapGet("/hi", () => "Мы приветствуем тебя");
+                app.MapGet("/", () => "РЎС‚Р°СЂС‚РѕРІР°СЏ СЃС‚СЂР°РЅРёС†Р°");
+                app.MapGet("/hi_edit", () => "РЎС‚СЂР°РЅРёС†Р° РїСЂРёРІРµС‚СЃС‚РІРёСЏ");
             }
             else
             {
