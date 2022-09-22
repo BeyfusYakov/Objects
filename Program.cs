@@ -8,7 +8,11 @@ public class program {
 
         public static void Main(String[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            WebHost.CreateDefaultBuilder(args)
+           .UseStartup<Startup>()
+           .Build()
+           .Run();
+            #region еще один вариант загрузки через mapget
 
             ////////////////////////////////////////////////////////
 
@@ -30,15 +34,11 @@ public class program {
 
             // app.Run();
             //app.Start();
+
+            #endregion
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
-        {
-           return WebHost.CreateDefaultBuilder(args)
-           .UseStartup<Startup>();
-           //.Build();
-           //.Run();
-        }
+
 
     }
 
