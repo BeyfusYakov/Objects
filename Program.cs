@@ -14,7 +14,7 @@ public class program {
            .Run();
             #region еще один вариант загрузки через mapget
 
-            ///////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////
 
             //WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
             //WebApplication app = builder.Build();
